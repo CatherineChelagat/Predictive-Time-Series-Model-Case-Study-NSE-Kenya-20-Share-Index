@@ -62,3 +62,37 @@ The data on exchange rate with the USD is downloaded from the investing website.
 - Annual GDP : This has 23 rows and contains the Kenyan GDP from 2000-2021
 
 - Central Bank Rate : Data on this is found in two datasets, with one ranging from 2008-2023 and the other from 1991-2016. They contain the interest rate that the     Central Bank of Kenya charges on loans to banks.
+
+
+## Methodology
+- Exploratory Data Analysis to understand the data. This included dropping features not required, formatting data types, joining the datasets etc.
+- After that some univariate analysis was done and visualizations were plotted.
+- The time series was then decomposed into trend, seasonality and residuals.
+- Granger Causality Analysis was perfomed 
+- The data was then preprocessed
+- Modellling was then perfomed. The models used include Arima, prophet model
+
+## Conclusions
+
+- Stock prices are mostly influenced by the inflation and CBK Rates.
+
+- Market anomalies like the Monday effect also largely influence the price at whick stocks trade at during the week.
+
+- The prophet model is a better forecaster as compared to the traditional forecasting models like ARIMA.
+
+- With the Prophet Model, as the prediction period is increased, the accuracy of the predictions gets weaker. Therefore, it is feasible for a short period of time.
+
+## Recommendations
+- The company/developers could use additional data sources and incorporate more economic and financial indicators into the model. Additionally, developers could experiment with different machine learning algorithms, such as deep learning and reinforcement learning, to improve the accuracy of the predictions of the prophet model.
+
+- Continuously update and retrain the model: Stock market data is constantly changing, so it's important to regularly update and retrain the model to ensure it remains accurate and effective. As new data becomes available, incorporate it into the model and retrain it to improve its accuracy.
+
+- Companies should consider incorporating economic and financial indicators into their stock price prediction models, such as inflation and CBK rates, as this can help to improve the accuracy of the predictions. By taking into account factors such as inflation and CBK rates, companies can create more accurate models that can better forecast future stock prices.
+
+- Companies should use the prophet model for stock price predictions, as it is more accurate than traditional forecasting models like ARIMA. The prophet model is designed to account for trends, seasonality, and other market anomalies, making it more effective at predicting future stock prices.
+
+- Companies should account for market anomalies when making stock price predictions, such as the Monday effect, as these can have a significant influence on stock prices. By taking into account factors like the Monday effect, companies can ensure that their stock price predictions are as accurate as possible.
+
+- Investors, traders, and financial analysts should leverage machine learning techniques to generate more accurate stock price predictions. By using advanced algorithms and large datasets, machine learning models can uncover patterns in the data that can be used to make more accurate predictions.
+
+- Use the model as a tool, not a crystal ball: While the model is an effective tool for predicting stock prices, it's important to remember that it's not infallible. Encourage stakeholders to use the model as one of many tools in their investment decision-making process and to consider additional factors such as risk tolerance, diversification, and market trends.
