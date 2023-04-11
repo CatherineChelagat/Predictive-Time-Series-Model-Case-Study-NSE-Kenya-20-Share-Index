@@ -55,8 +55,10 @@ No.	Column	Description
 
 The data on exchange rate with the USD is downloaded from the investing website. It has 4729 rows and 6 columns with the columns having the same information as the NSE 20 dataset columns.
 
-The datasets from the CBK website are on the specific macroeconomic factors affecting the prices of shares. The following datasets have been downloaded:
+- The datasets from the CBK website are on the specific macroeconomic factors affecting the prices of shares. The following datasets have been downloaded:
 
-Inflation rates : This has 219 rows and contains the the percentage change in the monthly consumer price index (CPI).
-Annual GDP : This has 23 rows and contains the Kenyan GDP from 2000-2021
-Central Bank Rate : Data on this is found in two datasets, with one ranging from 2008-2023 and the other from 1991-2016. They contain the interest rate that the Central Bank of Kenya charges on loans to banks.
+- Inflation rates : This has 219 rows and contains the the percentage change in the monthly consumer price index (CPI).
+
+- Annual GDP : This has 23 rows and contains the Kenyan GDP from 2000-2021
+
+- Central Bank Rate : Data on this is found in two datasets, with one ranging from 2008-2023 and the other from 1991-2016. They contain the interest rate that the     Central Bank of Kenya charges on loans to banks.
