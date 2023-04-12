@@ -83,7 +83,13 @@ It is possible that the changepoints are clustered at the end of the month becau
 
 The mae for VAR model is 356.75 meaning that our predictions will err by kshs 356 on the yearly predictions.
 
-Our metric of success was set such that the best performing model would be the one with the least value of MAE. In this case, that would be the VAR model. However, this model failed to capture the complexity of the dataset and its predictions are more or less in a straight line as seen in the evaluation. The prophet model with regressors was more detailed and gave more insight on the predictiond, it even shows the changepoints in the stock prices. For this reason, the best recommended model for this project is the Prophet model with regressors.
+Our metric of success was set such that the best performing model would be the one with the least value of MAE. In this case, that would be the VAR model. However, this model failed to capture the complexity of the dataset and its predictions are more or less in a straight line as seen in the evaluation. The prophet model with regressors was more detailed and gave more insight on the predictiond.
+
+
+## Minimun Viable Product(MVP)
+
+We chose the prophet model with additional regressors because it was more detailed and gave more insight on the predictiond, it even shows the changepoints in the stock prices. For this reason, the best recommended model for this project is the Prophet model with regressors.
+
 
 ## Conclusions
 
