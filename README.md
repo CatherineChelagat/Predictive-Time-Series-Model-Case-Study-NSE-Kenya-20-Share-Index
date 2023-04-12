@@ -75,8 +75,14 @@ The data on exchange rate with the USD is downloaded from the investing website.
 
 
 ## Methodology
-## - Data Wrangling
-- Exploratory Data Analysis to understand the data. This included dropping features not required, formatting data types, joining the datasets etc.
+### - Data Wrangling
+Out of the several datasets that were collected, only some features and rows are relevant to the process. Therefore, in this step, the features that are not required from each dataset were dropped. The remaining datasets were then joined.
+The cbk_rates datasets were in different formats, so before joining them, they needs to be adjusted. Since the data required should only be from 2005, any data before that were dropped.
+### - Exploratory Data Analysis
+ - Univariate analysis was perfomed. From the time series, the prices are highest in 2007 and then experiences a continous decline in 2008 all the way to 2009. This may have been as a result of the political instability caused by the post election violence. The prices are seen to keep following a similar trend over the years, increasing and decreasing in succession.
+ - The CBK rates are seen to be almost constant from 2005 to 2007 before dipping and experiencing a continous drop up until 2011 before spiking again.The CBK rates are seen to be highest in 2012.This was as a result of high inflation rate and fiscal deficit. In 2016, CBK introduced a cap on their interest rates and this can be seen on the graph because there is a downward trend.
+ - The exchange rate experienced a drop from 2005 to 2007 before going up since 2008 all the way to 2023. This can be attributed to increased rates of importing to exporting which has resulted to the weakening of the Kenyan Shilling against the dollar. The price being the lowest in 2008 is explained by the global recession that negatively affected the strength of the dollar. 
+
 - After that some univariate analysis was done and visualizations were plotted.
 - The time series was then decomposed into trend, seasonality and residuals.
 - Granger Causality Analysis was perfomed 
