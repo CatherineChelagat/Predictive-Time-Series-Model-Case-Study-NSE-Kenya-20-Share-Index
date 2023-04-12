@@ -82,18 +82,26 @@ The cbk_rates datasets were in different formats, so before joining them, they n
  - Univariate analysis was perfomed. From the time series, the prices are highest in 2007 and then experiences a continous decline in 2008 all the way to 2009. This may have been as a result of the political instability caused by the post election violence. The prices are seen to keep following a similar trend over the years, increasing and decreasing in succession.
  - The CBK rates are seen to be almost constant from 2005 to 2007 before dipping and experiencing a continous drop up until 2011 before spiking again.The CBK rates are seen to be highest in 2012.This was as a result of high inflation rate and fiscal deficit. In 2016, CBK introduced a cap on their interest rates and this can be seen on the graph because there is a downward trend.
  - The exchange rate experienced a drop from 2005 to 2007 before going up since 2008 all the way to 2023. This can be attributed to increased rates of importing to exporting which has resulted to the weakening of the Kenyan Shilling against the dollar. The price being the lowest in 2008 is explained by the global recession that negatively affected the strength of the dollar. 
+ - The inflation rates are seen to be fluctuating over the years, with the highest value being in 2012.
+ - The GDP has been going up. This shows that the economy has been growing in an upward trajectory.
+ - According to the heatmap, CBK rates are the most positively correlated to Price while the inflation rates are the most negatively correlated to Price.
+ - According to the graphs above, the p-values are less than 0.05 which means that both Price and Inflation rates can be used to predict the other hence showing possible causality.
 
-- After that some univariate analysis was done and visualizations were plotted.
-- The time series was then decomposed into trend, seasonality and residuals.
-- Granger Causality Analysis was perfomed 
-- The data was then preprocessed
-- Modellling was then perfomed. The models tested include  Arima, prophet model,VAR model. The ARIMA model had an MAE of 8.87 which means that our predictions for the daily stock prices will be off by kshs 8.87. However, the predictive power of this model for in the context of stock prices is questionable because it is heavily reliant on previous values to a point where the predicted values look like they're shifted from the actual values at a certain lag. The prophet model gave a mean absolute error of 465.3 for a one year forecast. This means that if this model makes a prediction for the share price one year from now, it would be off by kshs 465.3. The prophet model with additional regressor features gave a mean absolute error of 373.9 for a one year forecast. This means that if this model makes a prediction for the share price one year from now, it would be off by 373.9 Ksh.
+
+### - Data Preprocessing
+ - From the graph, the data does not appear to be stationary since the rolling mean is not constant.
+ - The p-value was 0.32 therefore we failed to reject the null hypothesis and determined that the data is not stationary. The data needed to be differenced so that it becomes stationary and fit for modelling.
+
+### - Modelling 
+ - The ARIMA model had an MAE of 8.87 which means that our predictions for the daily stock prices will be off by kshs 8.87. However, the predictive power of this model for in the context of stock prices is questionable because it is heavily reliant on previous values to a point where the predicted values look like they're shifted from the actual values at a certain lag.
+ - The prophet model gave a mean absolute error of 465.3 for a one year forecast. This means that if this model makes a prediction for the share price one year from now, it would be off by kshs 465.3.
+ - The prophet model with additional regressor features gave a mean absolute error of 373.9 for a one year forecast. This means that if this model makes a prediction for the share price one year from now, it would be off by 373.9 Ksh.
 
 According to the Prophet model, the coefficients give the following information:
-- For an increase in exchange rate by 1 Ksh with the US dollar, the share price decreases by 541.2 Kshs
-- For an increase in GDP by 1 million, the share price decreases by 262.8 Kshs
-- For an increase in inflation rate by 1%, the share price decreases by 87.4 Kshs
-- For an increase in CBK rate by 1%, the share price decreases by 85.1 Kshs
+ - For an increase in exchange rate by 1 Ksh with the US dollar, the share price decreases by 541.2 Kshs
+ - For an increase in GDP by 1 million, the share price decreases by 262.8 Kshs
+ - For an increase in inflation rate by 1%, the share price decreases by 87.4 Kshs
+ - For an increase in CBK rate by 1%, the share price decreases by 85.1 Kshs
 Changepoints are basically abrupt changes in a time series model which could be used as indicators of external factors affecting the trend.
 
 It is possible that the changepoints are clustered at the end of the month because that is when businesses often close their books and release financial reports. This could lead to changes in the market sentiment, which could affect NSE values.
