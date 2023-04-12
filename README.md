@@ -39,6 +39,16 @@ Develop and test machine learning models to identify the most significant market
 Evaluate the performance of the machine learning models in predicting future stock prices and compare them with traditional forecasting methods.
 Deploy the developed model online to provide easy access to our target partners, including SACCOs, insurance companies, and pension funds, who can use the model to inform their investment decisions.
 
+## Notebook Structure
+- Reading the Data
+- Data Wrangling
+- Exploratory Data Analysis
+- Data Preprocessing
+- Modelling
+- Training final model on full dataset
+- Conclusions
+- Recommendations
+
 ## Data Understanding
 
 The data used in this project was downloaded from here and CBK website.
@@ -65,6 +75,7 @@ The data on exchange rate with the USD is downloaded from the investing website.
 
 
 ## Methodology
+## - Data Wrangling
 - Exploratory Data Analysis to understand the data. This included dropping features not required, formatting data types, joining the datasets etc.
 - After that some univariate analysis was done and visualizations were plotted.
 - The time series was then decomposed into trend, seasonality and residuals.
