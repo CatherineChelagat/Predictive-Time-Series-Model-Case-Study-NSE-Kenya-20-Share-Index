@@ -70,7 +70,20 @@ The data on exchange rate with the USD is downloaded from the investing website.
 - The time series was then decomposed into trend, seasonality and residuals.
 - Granger Causality Analysis was perfomed 
 - The data was then preprocessed
-- Modellling was then perfomed. The models used include Arima, prophet model
+- Modellling was then perfomed. The models tested include  Arima, prophet model,VAR model. The ARIMA model had an MAE of 8.87 which means that our predictions for the daily stock prices will be off by kshs 8.87. However, the predictive power of this model for in the context of stock prices is questionable because it is heavily reliant on previous values to a point where the predicted values look like they're shifted from the actual values at a certain lag. The prophet model gave a mean absolute error of 465.3 for a one year forecast. This means that if this model makes a prediction for the share price one year from now, it would be off by kshs 465.3. The prophet model with additional regressor features gave a mean absolute error of 373.9 for a one year forecast. This means that if this model makes a prediction for the share price one year from now, it would be off by 373.9 Ksh.
+
+According to the Prophet model, the coefficients give the following information:
+- For an increase in exchange rate by 1 Ksh with the US dollar, the share price decreases by 541.2 Kshs
+- For an increase in GDP by 1 million, the share price decreases by 262.8 Kshs
+- For an increase in inflation rate by 1%, the share price decreases by 87.4 Kshs
+- For an increase in CBK rate by 1%, the share price decreases by 85.1 Kshs
+Changepoints are basically abrupt changes in a time series model which could be used as indicators of external factors affecting the trend.
+
+It is possible that the changepoints are clustered at the end of the month because that is when businesses often close their books and release financial reports. This could lead to changes in the market sentiment, which could affect NSE values.
+
+The mae for VAR model is 356.75 meaning that our predictions will err by kshs 356 on the yearly predictions.
+
+Our metric of success was set such that the best performing model would be the one with the least value of MAE. In this case, that would be the VAR model. However, this model failed to capture the complexity of the dataset and its predictions are more or less in a straight line as seen in the evaluation. The prophet model with regressors was more detailed and gave more insight on the predictiond, it even shows the changepoints in the stock prices. For this reason, the best recommended model for this project is the Prophet model with regressors.
 
 ## Conclusions
 
@@ -78,7 +91,7 @@ The data on exchange rate with the USD is downloaded from the investing website.
 
 - Market anomalies like the Monday effect also largely influence the price at whick stocks trade at during the week.
 
-- The prophet model is a better forecaster as compared to the traditional forecasting models like ARIMA.
+- The prophet model with regressors is a better forecaster as compared to the traditional forecasting models like ARIMA.
 
 - With the Prophet Model, as the prediction period is increased, the accuracy of the predictions gets weaker. Therefore, it is feasible for a short period of time.
 
@@ -89,7 +102,7 @@ The data on exchange rate with the USD is downloaded from the investing website.
 
 - Companies should consider incorporating economic and financial indicators into their stock price prediction models, such as inflation and CBK rates, as this can help to improve the accuracy of the predictions. By taking into account factors such as inflation and CBK rates, companies can create more accurate models that can better forecast future stock prices.
 
-- Companies should use the prophet model for stock price predictions, as it is more accurate than traditional forecasting models like ARIMA. The prophet model is designed to account for trends, seasonality, and other market anomalies, making it more effective at predicting future stock prices.
+- Companies should use the prophet model with regressors for stock price predictions, as it is more accurate than traditional forecasting models like ARIMA. The prophet model is designed to account for trends, seasonality, and other market anomalies, making it more effective at predicting future stock prices.
 
 - Companies should account for market anomalies when making stock price predictions, such as the Monday effect, as these can have a significant influence on stock prices. By taking into account factors like the Monday effect, companies can ensure that their stock price predictions are as accurate as possible.
 
