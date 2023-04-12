@@ -51,7 +51,7 @@ Deploy the developed model online to provide easy access to our target partners,
 
 ## Data Understanding
 
-The data used in this project was downloaded from ["here"](https://www.investing.com/indices/kenya-nse-20-historical-data) and CBK website.
+The data used in this project was downloaded from [here](https://www.investing.com/indices/kenya-nse-20-historical-data) and [CBK website.](https://www.centralbank.go.ke/inflation-rates/)
 
 The NSE 20 dataset contains 4531 rows and 6 columns with the following information:
 
