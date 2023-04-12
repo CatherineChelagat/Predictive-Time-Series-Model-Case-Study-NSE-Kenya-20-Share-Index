@@ -114,6 +114,8 @@ Our metric of success was set such that the best performing model would be the o
 ## Minimun Viable Product(MVP)
 
 We chose the prophet model with additional regressors because it was more detailed and gave more insight on the predictiond, it even shows the changepoints in the stock prices. For this reason, the best recommended model for this project is the Prophet model with regressors.
+### - Future improvements
+ -  We should incorporate economic and financial indicators into their stock price prediction models, such as inflation and CBK rates, as this can help to improve the accuracy of the predictions. By taking into account factors such as inflation and CBK rates, companies can create more accurate models that can better forecast future stock prices.
 
 
 ## Conclusions
