@@ -35,9 +35,9 @@ To develop and deploy a predictive time series model that leverages machine lear
 
 ## Specific Objectives
 
-Develop and test machine learning models to identify the most significant market-specific factors that influence stock prices in the NSE.
-Evaluate the performance of the machine learning models in predicting future stock prices and compare them with traditional forecasting methods.
-Deploy the developed model online to provide easy access to our target partners, including SACCOs, insurance companies, and pension funds, who can use the model to inform their investment decisions.
+- Develop and test machine learning models to identify the most significant market-specific factors that influence stock prices in the NSE.
+- Evaluate the performance of the machine learning models in predicting future stock prices and compare them with traditional forecasting methods.
+- Deploy the developed model online to provide easy access to our target partners, including SACCOs, insurance companies, and pension funds, who can use the model to inform their investment decisions.
 
 ## Notebook Structure
 - Reading the Data
@@ -113,7 +113,7 @@ Our metric of success was set such that the best performing model would be the o
 
 ## Minimun Viable Product(MVP)
 
-We chose the prophet model with additional regressors because it was more detailed and gave more insight on the predictiond, it even shows the changepoints in the stock prices. For this reason, the best recommended model for this project is the Prophet model with regressors.
+We chose the prophet model with additional regressors because it was more detailed and gave more insight on the predictions, it even shows the changepoints in the stock prices. For this reason, the best recommended model for this project is the Prophet model with regressors.
 ### - Future improvements
  -  We should incorporate economic and financial indicators into their stock price prediction models, such as inflation and CBK rates, as this can help to improve the accuracy of the predictions. By taking into account factors such as inflation and CBK rates, companies can create more accurate models that can better forecast future stock prices.
 
@@ -129,16 +129,16 @@ We chose the prophet model with additional regressors because it was more detail
 - With the Prophet Model, as the prediction period is increased, the accuracy of the predictions gets weaker. Therefore, it is feasible for a short period of time.
 
 ## Recommendations
-- The company/developers could use additional data sources and incorporate more economic and financial indicators into the model. Additionally, developers could experiment with different machine learning algorithms, such as deep learning and reinforcement learning, to improve the accuracy of the predictions of the prophet model.
+- *The company/developers could use additional data sources and incorporate more economic and financial indicators into the model.* Additionally, developers could experiment with different machine learning algorithms, such as deep learning and reinforcement learning, to improve the accuracy of the predictions of the prophet model.
 
-- Continuously update and retrain the model: Stock market data is constantly changing, so it's important to regularly update and retrain the model to ensure it remains accurate and effective. As new data becomes available, incorporate it into the model and retrain it to improve its accuracy.
+- *Continuously update and retrain the model*: Stock market data is constantly changing, so it's important to regularly update and retrain the model to ensure it remains accurate and effective. As new data becomes available, incorporate it into the model and retrain it to improve its accuracy.
 
-- Companies should consider incorporating economic and financial indicators into their stock price prediction models, such as inflation and CBK rates, as this can help to improve the accuracy of the predictions. By taking into account factors such as inflation and CBK rates, companies can create more accurate models that can better forecast future stock prices.
+- *Companies should consider incorporating economic and financial indicators into their stock price prediction models*, such as inflation and CBK rates, as this can help to improve the accuracy of the predictions. By taking into account factors such as inflation and CBK rates, companies can create more accurate models that can better forecast future stock prices.
 
-- Companies should use the prophet model with regressors for stock price predictions, as it is more accurate than traditional forecasting models like ARIMA. The prophet model is designed to account for trends, seasonality, and other market anomalies, making it more effective at predicting future stock prices.
+- *Companies should use the prophet model with regressors for stock price predictions*, as it is more accurate than traditional forecasting models like ARIMA. The prophet model is designed to account for trends, seasonality, and other market anomalies, making it more effective at predicting future stock prices.
 
-- Companies should account for market anomalies when making stock price predictions, such as the Monday effect, as these can have a significant influence on stock prices. By taking into account factors like the Monday effect, companies can ensure that their stock price predictions are as accurate as possible.
+- *Companies should account for market anomalies when making stock price predictions*, such as the Monday effect, as these can have a significant influence on stock prices. By taking into account factors like the Monday effect, companies can ensure that their stock price predictions are as accurate as possible.
 
-- Investors, traders, and financial analysts should leverage machine learning techniques to generate more accurate stock price predictions. By using advanced algorithms and large datasets, machine learning models can uncover patterns in the data that can be used to make more accurate predictions.
+- *Investors, traders, and financial analysts should leverage machine learning techniques to generate more accurate stock price predictions.* By using advanced algorithms and large datasets, machine learning models can uncover patterns in the data that can be used to make more accurate predictions.
 
-- Use the model as a tool, not a crystal ball: While the model is an effective tool for predicting stock prices, it's important to remember that it's not infallible. Encourage stakeholders to use the model as one of many tools in their investment decision-making process and to consider additional factors such as risk tolerance, diversification, and market trends.
+- *Use the model as a tool, not a crystal ball*: While the model is an effective tool for predicting stock prices, it's important to remember that it's not infallible. Encourage stakeholders to use the model as one of many tools in their investment decision-making process and to consider additional factors such as risk tolerance, diversification, and market trends.
